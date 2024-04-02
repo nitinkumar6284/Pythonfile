@@ -7,8 +7,8 @@ print("Original DataFrame:")
 print(df.head())
 sample_size = 50  
 sample = df.sample(sample_size)
-population_mean = df['Recovered'].mean()
-sample_mean = sample['Recovered'].mean()
+population_mean = df['total_rooms'].mean()
+sample_mean = sample['total_rooms'].mean()
 
 if np.isclose(population_mean, sample_mean, atol=0.05): 
     print("the selected sample is representative of the population.")
